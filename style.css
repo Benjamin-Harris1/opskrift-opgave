@@ -25,10 +25,9 @@ body {
 
 #how {
   background-color: #b08968;
-  width: 320px;
-  padding: 10px;
-  border: 20px groove #7f5539;
-  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
 }
 
 /*Nedenunder er diverse fonts til de forskellige punkter på hjemmesiden */
@@ -46,14 +45,17 @@ nav ul {
   list-style-type: none;
 }
 
-/*Forsøg på at justere billedet så det ser pænere ud. */
-img {
+/*Forsøg på at justere billederne så det ser pænere ud. */
+#laks {
+  border: 10px solid #b08968;
+  border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height: 600px;
-  object-fit: contain;
+  max-width: 100%¤;
+  height: auto;
+  opacity: 0.5;
+  filter: saturate(50%);
 }
 
 /*CSS GRID TEST */
