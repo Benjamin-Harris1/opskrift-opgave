@@ -1,7 +1,7 @@
 /*Styling på forskellige articles (farve, padding, margin og andre sjove ting som text-align*/
 body,
 html {
-  background-color: #ede0d4;
+  background-color: #a4c3b2;
   margin: 0;
   height: 100vh;
 }
@@ -64,11 +64,11 @@ article {
 .container {
   display: grid;
   grid-template-areas:
-    "header nav"
-    "b img"
-    "i h"
-    "f f";
-  grid-template-columns: 1fr;
+    "nav header header"
+    "nav b img"
+    "nav i h"
+    "nav f f";
+  grid-template-columns: auto;
   grid-template-rows: 20vh 40vh 40vh 2vh;
   margin: 0;
 }
