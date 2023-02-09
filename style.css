@@ -8,34 +8,34 @@ html {
 
 header {
   text-align: center;
-  background-color: #ddb892;
+  background-color: #6b9080;
   padding: 60px;
   margin: 0;
 }
 nav ul {
   list-style-type: none;
-  background-color: #b08968;
-  padding: 30px;
+  background-color: #a4c3b2;
+  padding: 100px;
   text-align: center;
   margin: 0;
 }
 #Beskrivelse {
-  background-color: #e6ccb2;
+  background-color: #cce3de;
   padding-left: 20px;
 }
 
 #Ingredienser {
-  background-color: #ddb892;
+  background-color: #eaf4f4;
   padding-left: 20px;
 }
 
 #how {
-  background-color: #b08968;
+  background-color: #f6fff8;
   padding-left: 20px;
 }
 
 footer {
-  background-color: #7f5539;
+  background-color: #6b9080;
   color: white;
   text-align: center;
 }
@@ -64,13 +64,12 @@ article {
 .container {
   display: grid;
   grid-template-areas:
-    "header header"
-    "nav nav"
+    "header nav"
     "b img"
     "i h"
     "f f";
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh 10vh 40vh 40vh 2vh;
+  grid-template-rows: 20vh 40vh 40vh 2vh;
   margin: 0;
 }
 header {
