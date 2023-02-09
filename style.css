@@ -1,33 +1,51 @@
+/* CSS GRID + CSS STYLE */
 body {
   background-color: #ede0d4;
+  display: grid;
+  grid-template-areas:
+    "nav header header header header"
+    "img beskrivelse beskrivelse beskrivelse ingredienser"
+    "how how how how how"
+    "footer footer footer footer footer";
+  grid-template-rows: auto;
 }
+
 #header {
+  grid-area: header;
   text-align: center;
+}
+
+#laks {
+  grid-area: laks;
 }
 
 #nav {
-  background-color: #ede0d4;
-  text-align: center;
+  grid-area: nav;
+  background-color: #ddb892;
 }
 #Beskrivelse {
+  grid-area: beskrivelse;
   background-color: #e6ccb2;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 #Ingredienser {
+  grid-area: ingredienser;
   background-color: #ddb892;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 #how {
+  grid-area: how;
   background-color: #b08968;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 25px;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  grid-area: footer;
+  text-align: center;
 }
 
 /*Nedenunder er diverse fonts til de forskellige punkter på hjemmesiden */
@@ -46,16 +64,18 @@ nav ul {
 }
 
 /*Forsøg på at justere billederne så det ser pænere ud. */
-#laks {
+#img {
   border: 10px solid #b08968;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
   max-width: 100%¤;
-  height: auto;
-  opacity: 0.5;
-  filter: saturate(50%);
+  height: 500px;
+  object-fit: cover;
+  text-align: center;
 }
 
 /*CSS GRID TEST */
