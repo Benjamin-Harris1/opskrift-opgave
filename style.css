@@ -1,54 +1,54 @@
-/* CSS GRID + CSS STYLE */
-body {
+/*Styling på forskellige articles (farve, padding, margin og andre sjove ting som text-align*/
+body,
+html {
   background-color: #ede0d4;
-  display: grid;
-  grid-template-areas:
-    "nav header header header header"
-    "img beskrivelse beskrivelse beskrivelse ingredienser"
-    "how how how how how"
-    "footer footer footer footer footer";
-  grid-template-rows: auto;
+  margin: 0;
+  height: 100vh;
 }
 
-#header {
-  grid-area: header;
+header {
   text-align: center;
-}
-
-#laks {
-  grid-area: laks;
-}
-
-#nav {
-  grid-area: nav;
   background-color: #ddb892;
+  padding: 60px;
+  margin: 0;
+}
+nav ul {
+  list-style-type: none;
+  background-color: #b08968;
+  padding: 30px;
+  text-align: center;
+  margin: 0;
 }
 #Beskrivelse {
-  grid-area: beskrivelse;
   background-color: #e6ccb2;
   padding-left: 20px;
 }
 
 #Ingredienser {
-  grid-area: ingredienser;
   background-color: #ddb892;
   padding-left: 20px;
 }
 
 #how {
-  grid-area: how;
   background-color: #b08968;
   padding-left: 20px;
 }
 
 footer {
-  background-color: black;
+  background-color: #7f5539;
   color: white;
-  grid-area: footer;
   text-align: center;
 }
 
-/*Nedenunder er diverse fonts til de forskellige punkter på hjemmesiden */
+/*Forsøg på at justere billedet */
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Nedenunder er diverse fonts til de forskellige elements på hjemmesiden */
 h1 {
   font-family: "Exo", sans-serif;
 }
@@ -56,26 +56,53 @@ h1 {
 h2 {
   font-family: "Kite One", sans-serif;
 }
-section {
+article {
   font-family: "Kanit", sans-serif;
 }
-nav ul {
-  list-style-type: none;
+
+/*CSS GRID - HAR AFPRØVET TO FORSKELLIGE MEDIA QUERIES, MEN KAN IKKE FÅ DEM TIL AT VIRKE*/
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "b img"
+    "i h"
+    "f f";
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 10vh 40vh 40vh 2vh;
+  margin: 0;
+}
+header {
+  grid-area: header;
 }
 
-/*Forsøg på at justere billederne så det ser pænere ud. */
-#img {
-  border: 10px solid #b08968;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  max-width: 100%¤;
-  height: 500px;
-  object-fit: cover;
-  text-align: center;
+nav {
+  grid-area: nav;
+}
+#Beskrivelse {
+  grid-area: b;
+}
+img {
+  grid-area: img;
+}
+#Ingredienser {
+  grid-area: i;
+}
+#how {
+  grid-area: h;
+}
+footer {
+  grid-area: f;
 }
 
-/*CSS GRID TEST */
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-height: 1000px) {
+  .container {
+    grid-template-rows: 1fr;
+  }
+}
