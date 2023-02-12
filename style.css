@@ -17,6 +17,7 @@ nav ul {
   padding: 100px;
   text-align: center;
   margin: 0;
+  font-size: medium;
 }
 #Beskrivelse {
   background-color: #cce3de;
@@ -37,6 +38,7 @@ footer {
   background-color: #6b9080;
   color: white;
   text-align: center;
+  font-weight: bold;
 }
 
 /*Forsøg på at justere billedet */
