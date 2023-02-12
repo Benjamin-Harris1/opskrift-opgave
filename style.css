@@ -41,16 +41,15 @@ footer {
   font-weight: bold;
 }
 
-/*Forsøg på at justere billedet */
+/*Justere billedet */
 img {
   max-width: 50%;
   border-radius: 10%;
-  display: block;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  opacity: 1;
+  display: block;
   border-style: ridge;
 }
 
